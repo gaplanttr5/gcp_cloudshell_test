@@ -2,7 +2,7 @@
 
 Hello world
 
-```
+```bash
 ls -a
 ```
 
