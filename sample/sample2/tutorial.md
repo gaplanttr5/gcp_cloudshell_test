@@ -30,8 +30,10 @@ gcloud config set project $PROJECT_ID
 gcloud storage ls 
 ```
 
-* 選択したGCPProjectに存在するCloudRunの一覧を表示します。
+* 選択したGCPProjectに存在するCloudRunの一覧を表示します。(APIを有効にして実行)
 
-```
+<walkthrough-enable-apis apis="run.googleapis.com"></walkthrough-enable-apis>
+
+```bash
 gcloud run services list
 ```
