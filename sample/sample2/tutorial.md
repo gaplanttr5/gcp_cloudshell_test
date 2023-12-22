@@ -6,28 +6,32 @@ Hello world
 ls -a
 ```
 
-### GCPプロジェクトを選択してください。
-
-see : https://cloud.google.com/shell/docs/cloud-shell-tutorials/directives-project-setup?hl=ja
+* GCPプロジェクトを選択してください。(選択中のGoogleアカウントがアクセス可能なGCPProjectの一覧が表示されます)
 
 <walkthrough-project-setup></walkthrough-project-setup>
+
+* 選択したProjectIDをset projectするためにexportします。
 
 ```bash
 export PROJECT_ID=<walkthrough-project-id/>
 ```
 
+* 選択したProjectIDに対してgcloudコマンドを発行するために設定します。
+
 ```bash
 gcloud config set project $PROJECT_ID
 ```
 
-### Part 1
+[see](https://cloud.google.com/shell/docs/cloud-shell-tutorials/directives-project-setup?hl=ja)
 
-Part one instructions.
+* 選択したGCPProjectに存在するGCSbucketの一覧を表示します。
 
-### Part 2
+```bash
+gcloud storage ls 
+```
 
-Part two instructions.
+* 選択したGCPProjectに存在するCloudRunの一覧を表示します。
 
-## Conclusion
-
-Done!
+```
+gcloud run services list
+```
