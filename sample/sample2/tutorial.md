@@ -10,11 +10,13 @@ ls -a
 
 see : https://cloud.google.com/shell/docs/cloud-shell-tutorials/directives-project-setup?hl=ja
 
-<walkthrough-project-setup>
-</walkthrough-project-setup>
+<walkthrough-project-setup></walkthrough-project-setup>
 
-```
+```bash
 export PROJECT_ID=<walkthrough-project-id/>
+```
+
+```bash
 gcloud config set project $PROJECT_ID
 ```
 
