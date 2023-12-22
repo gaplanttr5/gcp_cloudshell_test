@@ -32,6 +32,9 @@ gcloud storage ls
 
 * 選択したGCPProjectに存在するCloudRunの一覧を表示します。(APIを有効にして実行)
 
+APIを有効にする権限がない場合は当然実行できません。
+Service Usage ユーザ(serviceusage.services.use)か、Service Usage 管理者serviceusage.services.enable)の権限が必要です
+
 <walkthrough-enable-apis apis="run.googleapis.com"></walkthrough-enable-apis>
 
 ```bash
